@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WaahhCoffee- Coffee CitaRasa Terbaik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  </head>
+
+  <body
+    class="font-sans text-gray-800 bg-gradient-to-b from-[#d7b89c] via-[#f1e1c6] to-[#fffaf3]"
+  >
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center p-5 bg-gradient-to-r from-[#c19a6b] to-[#f5deb3] shadow-md fixed top-0 w-full z-50"
+    >
+      <h1 class="text-2xl font-bold text-white">☕ WaahhCoffeeby Amry</h1>
+      <nav class="space-x-6">
+        <a href="#hero" class="hover:text-yellow-100 text-white transition"
+          >Beranda</a
+        >
+        <a href="#tentang" class="hover:text-yellow-100 text-white transition"
+          >Tentang</a
+        >
+        <a href="#fitur" class="hover:text-yellow-100 text-white transition"
+          >Fitur</a
+        >
+        <a href="#footer" class="hover:text-yellow-100 text-white transition"
+          >Kontak</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="min-h-screen flex flex-col md:flex-row items-center justify-center pt-24 px-6"
+    >
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-5xl font-bold mb-4 text-[#5b3a29]">
+          Mood Cerah, Percaya Diri Setiap Hari ☕
+        </h2>
+        <p class="text-lg text-gray-700 mb-6">
+          Kopi AromaTheraphi Stress terbaik dengan <b>almond milk</b> dan
+          <b>Biji Arabica</b> yang membantu tampil sehat dan Percaya diri setiap
+          hari
+        </p>
+        <a
+          href="#fitur"
+          class="bg-[#5b3a29] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7b4f34] transition"
+        >
+          Jelajahi Sekarang
+        </a>
+      </div>
+      <div class="flex-1 mt-10 md:mt-0">
+        <img
+          src="serum Antiaging.jpg"
+          alt="Produk Waahskin"
+          class="rounded-2xl shadow-lg mx-auto"
+        />
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section
+      id="tentang"
+      class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#f1e1c6] to-[#fffaf3] text-center px-6"
+    >
+      <h3 class="text-3xl font-bold text-[#5b3a29] mb-6">Tentang Kami</h3>
+      <p class="text-gray-700 max-w-2xl">
+        Website <b>WaahhCoffee</b> dibuat pada tahun <b>2025</b> oleh
+        <b>Amry</b> sebagai platform inovatif untuk membantu pengguna menemukan
+        Cara alami menikmati hidup dengan minuman kopi terbaik. Didesain dengan
+        cinta dan semangat alami, website ini hadir untuk mempermudah kamu dalam
+        memilih produk KOPI,mulai dari: biji kopi, rasa kopi,dan aroma kopi
+        sesuai kebutuhan harianmu.
+      </p>
+      <div
+        class="bg-white rounded-2xl shadow-lg p-5 hover:scale-105 transition"
+      >
+        <img
+          src="produk3.jpg"
+          class="w-full rounded-xl mb-4"
+          alt="Mencerahkan Wajah"
+        />
+        <h4 class="text-xl font-semibold text-[#5b3a29]">WahhEspresso</h4>
+        <p class="text-gray-600 mt-2">
+          Mengembalikan Mood Anda dan mengurangi Pikiran Anda terapi stress
+          alami terbaik.
+        </p>
+      </div>
+    </section>
+
+    <!-- FITUR PRODUK -->
+    <section
+      id="fitur"
+      class="py-20 text-center bg-gradient-to-b from-[#f5deb3] to-[#fffaf3]"
+    >
+      <h3 class="text-3xl font-bold text-[#5b3a29] mb-10">
+        Fitur Unggulan Waahhskin
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 container mx-auto">
+        <div
+          class="bg-white rounded-2xl shadow-lg p-5 hover:scale-105 transition"
+        >
+          <img
+            src="produk1.jpg"
+            class="w-full rounded-xl mb-4"
+            alt="Bahan Alami"
+          />
+          <h4 class="text-xl font-semibold text-[#5b3a29]">
+            Bahan biji kopi terbaik
+          </h4>
+          <p class="text-gray-600 mt-2">
+            Kandungan alami yang menutrisi efek kenikmatan .
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow-lg p-5 hover:scale-105 transition"
+        >
+          <img
+            src="produk2.jpg"
+            class="w-full rounded-xl mb-4"
+            alt="Melembapkan Kulit"
+          />
+          <h4 class="text-xl font-semibold text-[#5b3a29]">
+            Melembapkan Kulit
+          </h4>
+          <p class="text-gray-600 mt-2">
+            Menjaga kelembapan alami kulit agar tetap lembut dan segar sepanjang
+            hari.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow-lg p-5 hover:scale-105 transition"
+        >
+          <img
+            src="produk3.jpg"
+            class="w-full rounded-xl mb-4"
+            alt="Mencerahkan Wajah"
+          />
+          <h4 class="text-xl font-semibold text-[#5b3a29]">
+            Mencerahkan Wajah
+          </h4>
+          <p class="text-gray-600 mt-2">
+            Mengembalikan kilau alami kulit dan mengurangi kusam dengan bahan
+            alami terbaik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRUD PRODUK -->
+    <section id="produk" class="py-24 container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-8 text-[#5b3a29]">Manajemen Produk</h3>
+
+      <div
+        class="bg-gradient-to-r from-[#f1e1c6] to-[#fffaf3] p-6 rounded-2xl shadow-md mb-8"
+      >
+        <h4 class="text-xl font-semibold mb-4 text-[#5b3a29]">
+          Tambah Produk Baru
+        </h4>
+        <form id="form-produk" class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <input
+            type="text"
+            id="nama"
+            placeholder="Nama Produk"
+            class="border p-2 rounded"
+            required
+          />
+          <input
+            type="text"
+            id="kategori"
+            placeholder="Kategori"
+            class="border p-2 rounded"
+            required
+          />
+          <input
+            type="number"
+            id="harga"
+            placeholder="Harga"
+            class="border p-2 rounded"
+            required
+          />
+          <input
+            type="number"
+            id="stok"
+            placeholder="Jumlah"
+            class="border p-2 rounded"
+            required
+          />
+          <button
+            type="submit"
+            class="col-span-1 md:col-span-4 bg-[#5b3a29] text-white py-2 rounded hover:bg-[#7b4f34] transition"
+          >
+            Tambahkan Produk
+          </button>
+        </form>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <div class="flex justify-between items-center mb-4">
+          <h4 class="text-xl font-semibold text-[#5b3a29]">Daftar Produk</h4>
+          <button
+            id="exportPDF"
+            class="bg-[#5b3a29] text-white px-4 py-2 rounded hover:bg-[#7b4f34] transition"
+          >
+            Export ke PDF
+          </button>
+        </div>
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-[#f5deb3]">
+              <th class="border p-2">No</th>
+              <th class="border p-2">Nama</th>
+              <th class="border p-2">Kategori</th>
+              <th class="border p-2">Harga</th>
+              <th class="border p-2">Jumlah</th>
+              <th class="border p-2">Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="tabel-produk"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="footer"
+      class="bg-gradient-to-r from-[#5b3a29] to-[#7b4f34] text-white py-10 text-center"
+    >
+      <p class="mb-4 font-semibold">Hubungi kami di media sosial:</p>
+      <div class="space-x-6">
+        <a
+          href="https://www.instagram.com/waahskinofficial"
+          target="_blank"
+          class="inline-flex items-center gap-2 text-yellow-200 hover:text-white transition"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            class="w-5 h-5"
+          />
+          <span>@waahCoffee official</span>
+        </a>
+      </div>
+      <p class="text-sm mt-4">© WaahhCoffee. Rasa Nikmat Alami.</p>
+    </footer>
+
+    <!-- SCRIPT JQUERY -->
+    <script>
+      $(document).ready(function () {
+        let produkList = [];
+
+        function tampilkanProduk() {
+          $("#tabel-produk").html("");
+          produkList.forEach(function (p, i) {
+            $("#tabel-produk").append(`
+              <tr>
+                <td class='border p-2'>${i + 1}</td>
+                <td class='border p-2'>${p.nama}</td>
+                <td class='border p-2'>${p.kategori}</td>
+                <td class='border p-2'>Rp ${p.harga}</td>
+                <td class='border p-2'>${p.stok}</td>
+                <td class='border p-2'>
+                  <button class='hapus bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition' data-index='${i}'>Hapus</button>
+                </td>
+              </tr>
+            `);
+          });
+        }
+
+        $("#form-produk").submit(function (e) {
+          e.preventDefault();
+          const produk = {
+            nama: $("#nama").val(),
+            kategori: $("#kategori").val(),
+            harga: $("#harga").val(),
+            stok: $("#stok").val(),
+          };
+          produkList.push(produk);
+          tampilkanProduk();
+          this.reset();
+        });
+
+        $(document).on("click", ".hapus", function () {
+          const index = $(this).data("index");
+          produkList.splice(index, 1);
+          tampilkanProduk();
+        });
+
+        $("#exportPDF").click(function () {
+          const { jsPDF } = window.jspdf;
+          const doc = new jsPDF();
+          doc.text("Laporan Produk Waahhskin", 14, 15);
+          const rows = produkList.map((p, i) => [
+            i + 1,
+            p.nama,
+            p.kategori,
+            p.harga,
+            p.stok,
+          ]);
+          doc.autoTable({
+            head: [["No", "Nama", "Kategori", "Harga", "Jumlah"]],
+            body: rows,
+            startY: 25,
+          });
+          doc.save("Laporan_Produk_WaahhCoffee.pdf");
+        });
+      });
+    </script>
+  </body>
+</html>
